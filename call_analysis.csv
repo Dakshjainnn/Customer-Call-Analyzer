@@ -1,0 +1,19 @@
+Transcript,Summary,Sentiment
+"Agent: Thank you for calling TechSupport, this is Alex. How can I help you?
+Customer: Hi Alex, I’m having a really frustrating time with my new X-100 router. I bought it yesterday, and the Wi-Fi signal keeps dropping every 15 minutes. I’ve tried restarting it multiple times, but the problem persists.
+Agent: I’m sorry to hear that. Let me look up your account. Could you please provide your customer ID?
+Customer: Yes, it’s 55-832-901. I just want this fixed. I work from home and this is making my job impossible.
+Agent: I understand your frustration. Thank you for the ID. I see your new router here. Let’s try a remote reset from my end. It might take a few minutes.
+Customer: Okay, fine. Let’s try it.",Could not generate summary.,Could not determine sentiment.
+"Agent: Thank you for calling TechSupport, this is Alex. How can I help you?
+Customer: Hi Alex, I’m having a really frustrating time with my new X-100 router. I bought it yesterday, and the Wi-Fi signal keeps dropping every 15 minutes. I’ve tried restarting it multiple times, but the problem persists.
+Agent: I’m sorry to hear that. Let me look up your account. Could you please provide your customer ID?
+Customer: Yes, it’s 55-832-901. I just want this fixed. I work from home and this is making my job impossible.
+Agent: I understand your frustration. Thank you for the ID. I see your new router here. Let’s try a remote reset from my end. It might take a few minutes.
+Customer: Okay, fine. Let’s try it.",Customer is experiencing Wi-Fi signal drops with their new X-100 router and is seeking assistance to resolve the issue.,Negative
+"Agent: Thank you for calling TechSupport, this is Alex. How can I help you?
+Customer: Hi Alex, I’m having a really frustrating time with my new X-100 router. I bought it yesterday, and the Wi-Fi signal keeps dropping every 15 minutes. I’ve tried restarting it multiple times, but the problem persists.
+Agent: I’m sorry to hear that. Let me look up your account. Could you please provide your customer ID?
+Customer: Yes, it’s 55-832-901. I just want this fixed. I work from home and this is making my job impossible.
+Agent: I understand your frustration. Thank you for the ID. I see your new router here. Let’s try a remote reset from my end. It might take a few minutes.
+Customer: Okay, fine. Let’s try it.","Customer is experiencing issues with their new X-100 router, specifically a dropped Wi-Fi signal every 15 minutes, and the agent is attempting to troubleshoot the issue with a remote reset.",Negative

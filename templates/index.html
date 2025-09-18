@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Call Analyzer</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: #f4f7f6; margin: 40px; color: #333; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 25px 40px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        h1 { color: #2c3e50; }
+        textarea { width: 100%; height: 150px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 15px; font-size: 1rem; }
+        .btn { display: inline-block; background-color: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; font-weight: bold; }
+        .btn:hover { background-color: #0056b3; }
+        .results { margin-top: 30px; background-color: #e9ecef; padding: 20px; border-radius: 5px; border-left: 5px solid #007bff; }
+        h3 { margin-top: 0; color: #2c3e50; }
+        p { line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Call Analyzer</h1>
+        <p>Enter a customer call transcript below to get a summary and sentiment analysis using the Groq API.</p>
+        <form action="/" method="post">
+            <textarea name="transcript" placeholder="Paste your call transcript here...">{{ transcript_text or 'Agent: Thank you for calling TechSupport, this is Alex. How can I help you?
+Customer: Hi Alex, I’m having a really frustrating time with my new X-100 router. I bought it yesterday, and the Wi-Fi signal keeps dropping every 15 minutes. I’ve tried restarting it multiple times, but the problem persists.
+Agent: I’m sorry to hear that. Let me look up your account. Could you please provide your customer ID?
+Customer: Yes, it’s 55-832-901. I just want this fixed. I work from home and this is making my job impossible.
+Agent: I understand your frustration. Thank you for the ID. I see your new router here. Let’s try a remote reset from my end. It might take a few minutes.
+Customer: Okay, fine. Let’s try it.' }}</textarea>
+            <br>
+            <button type="submit" class="btn">Analyze Transcript</button>
+        </form>
+
+        {% if summary and sentiment %}
+        <div class="results">
+            <h3>Analysis Complete</h3>
+            <p><strong>Original Transcript:</strong><br>{{ transcript_text }}</p>
+            <p><strong>Generated Summary:</strong><br>{{ summary }}</p>
+            <p><strong>Determined Sentiment:</strong><br>{{ sentiment }}</p>
+            <p><em>This result has been saved to <code>call_analysis.csv</code>.</em></p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
